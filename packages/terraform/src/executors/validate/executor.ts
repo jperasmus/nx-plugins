@@ -13,6 +13,6 @@ export default async function runExecutor(
 function toCmdOptions(options: ValidateExecutorSchema): string[] {
   return [
     ...(options.json !== undefined ? [`-json`]: []),
-    ...(options.noColor !== undefined ? [`-noColor`]: []),
+    ...(options.noColor !== undefined ? [`-no-color`]: []),
   ]
 }
